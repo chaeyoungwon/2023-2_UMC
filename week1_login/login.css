@@ -1,0 +1,56 @@
+.login-title{
+    text-align: center;
+    font-size:50px;
+    align-items:center;
+}
+
+.inf{
+    text-align:center;
+    color: black;
+}
+.button{
+    display:block;
+    background-color:rgb(55, 53, 53);
+    color:white;
+    border: none;
+    display:flex;
+    align-items:center;
+    border-radius:12px;
+    font-size:20px;
+    padding: 12px 100px;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    
+}
+input {
+    text-align: left;
+    width:250px;
+    height:30px;
+    border: none;
+    border-bottom: solid 2px white;
+    opacity:0.5;
+    background-color:transparent;
+    margin:3px;
+    align-items:center;
+}
+
+input::placeholder {
+    color: white;
+    opacity:0.5;
+    font-size: 18px;
+}
+
+.wrapper {
+    text-align: center;
+    margin:auto;
+    position:relative;
+    transform:translate(0%,30%);
+    margin-left:auto;
+    margin-right:auto;
+    width: 1000px;
+    height: 600px;
+    border:none;
+    border-radius:5%; 
+    background: rgb(231, 238, 256, 0.6);
+}
