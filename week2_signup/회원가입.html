@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <style>
+        h1.signup-title:after{
+            border-bottom: solid 2px white;
+            width: 350px;
+            opacity: 0.5;
+            background-color: transparent;
+            content:"";
+            display:block;
+            margin: 9px auto;    
+        }
+        body{
+            background-image: url('https://i.ibb.co/9HQkvkv/page.jpg');
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+        }
+
+    </style>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <form>  
+        <div class="wrapper">
+            <br><h1 class="signup-title"><strong>회원 가입</h1>
+            <div class="name">
+                <label for="name">이름</label>
+                <input type="text" id="name" ><br>
+                <div class="unrequired-message hide">
+                    멋진 이름이네요!
+                </div>
+                <div class="required-message hide">
+                    필수 입력 항목입니다!</div>
+            
+            <div class="nickname">
+                <br><label for="nickname">닉네임</label>
+                <input type="text" id="nickname" ><br>
+                <div class="success-message hide">멋진 닉네임이군요!</div>
+                <div class="failure-message hide">
+                  닉네임은 2 ~ 5글자로 구성해주세요!
+                </div>
+            </div>
+            
+            <div class="email">
+                <br><label for="email">이메일</label>
+                <input type="email" id="email"><br>
+                <div class="success-message1 hide">올바른 메일 형식입니다!</div>
+                <div class="failure-message1 hide">
+                  올바른 메일 형식이 아닙니다!
+                </div>
+            </div>
+
+            <div class="password">
+                <br><label for="password">비밀번호</label>
+                <input type="password" id="password" ><br>
+                <div class="success-message2 hide">안전한 비밀번호입니다!</div>
+                <div class="failure-message2 hide">
+                  영어+숫자+특수문자를 조합하여 작성해주세요.
+                </div>
+            </div>
+
+            <div class="checkingpw">
+                <br><label for="checkingpw">비밀번호 확인</label>
+                <input type="password" id="checkingpw" ><br>
+                <div class="match-message hide">비밀번호가 일치합니다.</div>
+                <div class="mismatch-message hide">비밀번호가 일치하지 않습니다.</div><br><br>
+            </div>
+            <button type="button" class="button" id="open">가입하기</button>
+            <div class="modal-wrapper" style="display: none;">
+                <div class="modal">
+                  <div class="modal-title">가입 성공!</div>
+                  <p>umc 챌린저 가입을 축하합니다!!</p>
+                  <div class="close-wrapper">
+                    <button id="close" type="button">닫기</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+</body>
+<script  src="./index.js"></script>    
+</html>
